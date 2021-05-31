@@ -1,0 +1,19 @@
+
+name: testwf
+on: push
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+        
+    steps:
+    - uses: actions/checkout@v1
+      name: chequeando el proyecto
+    - name: Run a one-line script
+      run: echo Hola mundo
+    - name: Run a multi-line script
+      run: |
+        echo otra accion
+        time
+
+          
