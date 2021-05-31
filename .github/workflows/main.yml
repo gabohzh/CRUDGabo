@@ -1,0 +1,16 @@
+name: main workflow
+on: [push]
+
+jobs:
+  CRUDPRueba:
+    runs-on: ubuntu-latest
+    name: prueba de Crud
+    steps:
+      - name: Prueba de CRUD paso 1
+        id: id1
+        uses: actions/CRUDGabo@v1
+        with:
+          who-to-greet: 'Gabo'
+      # Use the output from the `hello` step
+      - name: Get the output time
+        run: echo finalizado
