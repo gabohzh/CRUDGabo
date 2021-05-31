@@ -1,0 +1,6 @@
+# action.yml
+name: 'crear contenedor'
+description: 'creación del contenedor deade github actions'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
