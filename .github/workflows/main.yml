@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: Prueba de CRUD paso 1
         id: id1
-        uses: gabohzh/CRUDGabo@v2
+        uses: gabohzh/CRUDGabo@v1
         with:
           who-to-greet: 'Gabo'
       # Use the output from the `hello` step
